@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Extra using statment to allow us to use the scene management functions
+using UnityEngine.SceneManagement;
+
 public class Fletcher : MonoBehaviour {
 
     //designer variables
     public float speed = 10;
-    public float jumpSpeed = 10;
+    public float jumpSpeed = 1;
     public Rigidbody2D physicsBody;
     public string horizontalAxis = "Horizontal";
     public string jumpButton = "Jump";
