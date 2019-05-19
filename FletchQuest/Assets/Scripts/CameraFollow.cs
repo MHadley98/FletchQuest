@@ -6,7 +6,7 @@ public class CameraFollow : MonoBehaviour {
 
     public Transform fletcher;
 
-    void fixedUpdate()
+    void FixedUpdate()
     {
         transform.position = new Vector3(fletcher.position.x, fletcher.position.z);
     }
