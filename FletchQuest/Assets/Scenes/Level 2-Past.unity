@@ -360,7 +360,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -15922,7 +15922,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fletcher: {fileID: 1679579924}
-  smoothTime: 0.1
 --- !u!1 &1488308983
 GameObject:
   m_ObjectHideFlags: 0

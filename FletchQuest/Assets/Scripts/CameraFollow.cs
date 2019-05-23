@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform fletcher;
+    public Transform target;
 
     Vector3 velocity = Vector3.zero;
 
@@ -28,12 +28,23 @@ public class CameraFollow : MonoBehaviour
     {
 
         //sets target psoition
-        Vector3 targetPos = fletcher.position;
+        Vector3 targetPos = target.position;
 
         if (YMinEnabled && YMaxEnabled)
-            targetPos.y = Mathf.Clamp(targetPos.position.y, YMinValue, YMaxValue);
+            targetPos.y = Mathf.Clamp(target.position.y, YMinValue, YMaxValue);
         else if (YMinEnabled)
-            targetPos.y = Mathf.Clamp(targetPos.position.y, YMinValue, targetPos.position.y);
+            targetPos.y = Mathf.Clamp(target.position.y, YMinValue, target.position.y);
+        else if (YMaxEnabled)
+            targetPos.y = Mathf.Clamp(target.position.y, target.position.y, YMaxValue);
+
+
+        if (XMinEnabled && XMaxEnabled)
+            targetPos.x = Mathf.Clamp(target.position.x, XMinValue, XMaxValue);
+        else if (XMinEnabled)
+            targetPos.x = Mathf.Clamp(target.position.x, XMinValue, target.position.x);
+        else if (XMaxEnabled)
+            targetPos.x = Mathf.Clamp(target.position.x, target.position.x, XMaxValue);
+
 
         targetPos.z = transform.position.z;
 
