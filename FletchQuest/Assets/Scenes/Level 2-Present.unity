@@ -15637,6 +15637,8 @@ MonoBehaviour:
   physicsBody: {fileID: 1805511250}
   horizontalAxis: Horizontal
   jumpButton: Jump
+  ttButton: Time Travel
+  sceneToLoad: Level 2-Past
   fletcherAnimator: {fileID: 1805511252}
   playerSprite: {fileID: 1805511253}
   playerCollider: {fileID: 1805511249}

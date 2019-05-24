@@ -13,10 +13,14 @@ public class Fletcher : MonoBehaviour {
     public Rigidbody2D physicsBody;
     public string horizontalAxis = "Horizontal";
     public string jumpButton = "Jump";
+    public string ttButton = "Time Travel";
+    public string sceneToLoad;
 
     public Animator fletcherAnimator;
     public SpriteRenderer playerSprite;
     public Collider2D playerCollider;
+
+
 
     // Use this for initialization
     void Start () {
@@ -73,6 +77,18 @@ public class Fletcher : MonoBehaviour {
         {
             playerSprite.flipX = false;
         }
+
+
+        //time travel
+        bool ttButtonPressed = Input.GetButtonDown(ttButton);
+        if (ttButtonPressed == true && touchingGround == true)
+        {
+            SceneManager.LoadScene(sceneToLoad);
+        }
+
+
+
+
     }
 
 }

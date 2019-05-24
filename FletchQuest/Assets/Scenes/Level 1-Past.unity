@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 118604843}
   - component: {fileID: 118604842}
   - component: {fileID: 118604841}
+  - component: {fileID: 118604844}
   m_Layer: 0
   m_Name: Helmet_0
   m_TagString: Untagged
@@ -320,6 +321,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &118604844
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 118604840}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.064277425, y: 0.02571788}
+  m_Size: {x: 2.0170918, y: 1.4769783}
+  m_Direction: 1
 --- !u!1 &735483529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,6 +2421,8 @@ MonoBehaviour:
   physicsBody: {fileID: 1112969524}
   horizontalAxis: Horizontal
   jumpButton: Jump
+  ttButton: Time Travel
+  sceneToLoad: Level 1-Present
   fletcherAnimator: {fileID: 1112969526}
   playerSprite: {fileID: 1112969527}
   playerCollider: {fileID: 1112969523}
