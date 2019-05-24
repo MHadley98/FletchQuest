@@ -500,7 +500,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 736777838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.285, y: -20.827, z: 0}
+  m_LocalPosition: {x: -272.11, y: -23.5, z: 0}
   m_LocalScale: {x: 3.816, y: 3.816, z: 3.816}
   m_Children: []
   m_Father: {fileID: 0}
@@ -535,7 +535,7 @@ Rigidbody2D:
   m_Mass: 30
   m_LinearDrag: 5
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7a6e3772c5f0543b6a2d30c5f65940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 45
+  speed: 50
   jumpSpeed: 30
   physicsBody: {fileID: 736777843}
   horizontalAxis: Horizontal
