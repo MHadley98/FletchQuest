@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 736777841}
-  smoothTime: -0.1
+  smoothTime: 0
   YMaxEnabled: 1
   YMaxValue: -0.01
   YMinEnabled: 1
@@ -557,7 +557,7 @@ MonoBehaviour:
   physicsBody: {fileID: 736777843}
   horizontalAxis: Horizontal
   jumpButton: Jump
-  playerAnimator: {fileID: 0}
+  fletcherAnimator: {fileID: 736777839}
   playerSprite: {fileID: 736777840}
   playerCollider: {fileID: 736777842}
 --- !u!1 &1014903791

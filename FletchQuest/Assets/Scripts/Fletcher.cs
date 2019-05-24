@@ -14,7 +14,7 @@ public class Fletcher : MonoBehaviour {
     public string horizontalAxis = "Horizontal";
     public string jumpButton = "Jump";
 
-    public Animator playerAnimator;
+    public Animator fletcherAnimator;
     public SpriteRenderer playerSprite;
     public Collider2D playerCollider;
 
@@ -42,6 +42,9 @@ public class Fletcher : MonoBehaviour {
 
         //give the velocity to the rigid body
         physicsBody.velocity = velocity;
+
+        //tell animator our speed
+        fletcherAnimator.SetFloat("walkSpeed", Mathf.Abs(velocity.x));
 
         //Jumpuing
 
