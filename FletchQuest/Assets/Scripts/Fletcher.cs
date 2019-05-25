@@ -10,6 +10,7 @@ public class Fletcher : MonoBehaviour {
     //designer variables
     public float speed = 10;
     public float jumpSpeed = 1;
+    public float superJump = 5;
     public Rigidbody2D physicsBody;
     public string horizontalAxis = "Horizontal";
     public string jumpButton = "Jump";
@@ -70,6 +71,25 @@ public class Fletcher : MonoBehaviour {
             physicsBody.velocity = velocity;
         }
 
+
+
+        //checks to see if player is in a place where they can super jump
+        LayerMask sjLayerMask = LayerMask.GetMask("SuperJump");
+
+        bool touchingSJ = playerCollider.IsTouchingLayers(sjLayerMask);
+
+        if (jumpButtonPressed == true && touchingSJ == true)
+        {
+            //We have pressed jump so we should set 
+            //our upward velocity to our jump speed
+            velocity.y = superJump;
+
+            //give the velocity to the rigid body
+            physicsBody.velocity = velocity;
+        }
+
+
+        //flips sprite to face right direction
         if (velocity.x < 0)
         {
             playerSprite.flipX = true;
