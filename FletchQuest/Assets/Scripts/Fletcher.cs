@@ -15,6 +15,7 @@ public class Fletcher : MonoBehaviour {
     public string jumpButton = "Jump";
     public string ttButton = "Time Travel";
     public string sceneToLoad;
+    public Score scoreObject;
 
     public Animator fletcherAnimator;
     public SpriteRenderer playerSprite;
@@ -83,6 +84,8 @@ public class Fletcher : MonoBehaviour {
         bool ttButtonPressed = Input.GetButtonDown(ttButton);
         if (ttButtonPressed == true && touchingGround == true)
         {
+            scoreObject.SaveScore();
+
             SceneManager.LoadScene(sceneToLoad);
         }
 
