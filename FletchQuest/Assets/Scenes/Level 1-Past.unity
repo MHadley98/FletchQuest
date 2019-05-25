@@ -1773,7 +1773,7 @@ MonoBehaviour:
   YMaxEnabled: 1
   YMaxValue: 0
   YMinEnabled: 1
-  YMinValue: -0.3
+  YMinValue: 0
   XMaxEnabled: 1
   XMaxValue: 261.8
   XMinEnabled: 1
@@ -1868,7 +1868,7 @@ Rigidbody2D:
   m_Mass: 30
   m_LinearDrag: 5
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1966,7 +1966,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1112969522}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -86.6, y: -20.4, z: -150.44}
+  m_LocalPosition: {x: -83.1, y: -23.3, z: -150.44}
   m_LocalScale: {x: 3.7774131, y: 3.7774131, z: 3.7774131}
   m_Children: []
   m_Father: {fileID: 0}
