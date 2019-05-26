@@ -114,4 +114,9 @@ public class Fletcher : MonoBehaviour {
 
     }
 
+    public void Kill()
+    {
+        SceneManager.LoadScene(currentLevel.buildIndex);
+    }
+
 }
