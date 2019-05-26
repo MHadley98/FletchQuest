@@ -17,6 +17,7 @@ public class Fletcher : MonoBehaviour {
     public string ttButton = "Time Travel";
     public string sceneToLoad;
     public Score scoreObject;
+    public Lives livesObject;
 
     public Animator fletcherAnimator;
     public SpriteRenderer playerSprite;
@@ -116,6 +117,11 @@ public class Fletcher : MonoBehaviour {
 
     public void Kill()
     {
+        livesObject.LoseLife();
+        livesObject.SaveLives();
+
+        Scene currentLevel = SceneManager.GetActiveScene();
+
         SceneManager.LoadScene(currentLevel.buildIndex);
     }
 

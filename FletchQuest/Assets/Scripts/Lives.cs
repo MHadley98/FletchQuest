@@ -29,6 +29,7 @@ public class Lives : MonoBehaviour {
     {
 
         fletchLives = fletchLives - 1;
+        livesText.text = fletchLives.ToString();
 
     }
 
@@ -36,13 +37,13 @@ public class Lives : MonoBehaviour {
     public void SaveLives()
     {
 
-        PlayerPrefs.SetInt("lives", fletcherLives);
+        PlayerPrefs.SetInt("lives", fletchLives);
 
     }
 
     public bool IsGameOver()
     {
-        if (numericalLives <= 0)
+        if (fletchLives <= 0)
         {
             return true;
         }
