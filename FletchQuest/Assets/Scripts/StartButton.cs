@@ -10,6 +10,9 @@ public class StartButton : MonoBehaviour {
 	public void StartGame()
     {
         PlayerPrefs.DeleteKey("score");
+        PlayerPrefs.DeleteKey("xPos");
+        PlayerPrefs.DeleteKey("yPos");
+
         //Loads Level 1
         SceneManager.LoadScene("Level 1-Present");
     }

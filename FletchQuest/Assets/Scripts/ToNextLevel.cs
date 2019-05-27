@@ -18,6 +18,8 @@ public class ToNextLevel : MonoBehaviour
         //only do something if the player runs into
         if (playerScript != null)
         {
+            PlayerPrefs.DeleteKey("xPos");
+            PlayerPrefs.DeleteKey("yPos");
             //load the next level
             SceneManager.LoadScene(sceneToLoad);
         }
