@@ -27,8 +27,14 @@ public class Fletcher : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+
+        Vector3 newPos = transform.position;
+        newPos.x = PlayerPrefs.GetFloat("xPos", transform.position.x);
+        newPos.y = PlayerPrefs.GetFloat("yPos", transform.position.y);
+
+        transform.position = newPos;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -107,7 +113,13 @@ public class Fletcher : MonoBehaviour {
         {
             scoreObject.SaveScore();
 
+            PlayerPrefs.SetFloat("xPos", transform.position.x);
+            PlayerPrefs.SetFloat("yPos", transform.position.y);
+
             SceneManager.LoadScene(sceneToLoad);
+
+
+
         }
 
 

@@ -807,7 +807,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e2ec1e158813d1c479364dadb40df713, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15343,7 +15343,7 @@ GameObject:
   - component: {fileID: 1132602966}
   - component: {fileID: 1132602965}
   - component: {fileID: 1132602964}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20634,13 +20634,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   jumpSpeed: 30
-  superJump: 5
+  superJump: 50
   physicsBody: {fileID: 1679579920}
   horizontalAxis: Horizontal
   jumpButton: Jump
   ttButton: Time Travel
   sceneToLoad: Level 2-Present
   scoreObject: {fileID: 1722999524}
+  livesObject: {fileID: 0}
   fletcherAnimator: {fileID: 1679579922}
   playerSprite: {fileID: 1679579923}
   playerCollider: {fileID: 1679579919}
@@ -20715,7 +20716,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1679579918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 183.3, y: 24.2, z: 0}
+  m_LocalPosition: {x: -427.4, y: -21.6, z: 0}
   m_LocalScale: {x: 4.806, y: 4.806, z: 4.806}
   m_Children: []
   m_Father: {fileID: 0}
