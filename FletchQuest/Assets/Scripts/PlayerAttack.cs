@@ -32,7 +32,7 @@ public class PlayerAttack : MonoBehaviour {
         {
             if(attackTimer > 0)
             {
-                attackTimer -= attackTimer.deltaTime;
+               // attackTimer -= attackTimer.deltaTime;
             }
             else
             {

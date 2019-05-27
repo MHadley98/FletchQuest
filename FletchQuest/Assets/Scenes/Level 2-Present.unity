@@ -559,7 +559,7 @@ MonoBehaviour:
   XMaxEnabled: 1
   XMaxValue: 390.2
   XMinEnabled: 1
-  XMinValue: -433.38
+  XMinValue: -389.2
 --- !u!1 &833988223
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +584,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 833988223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.389397, y: -0.79446936, z: -31.884108}
+  m_LocalPosition: {x: 1.04, y: -0.79446936, z: -31.884108}
   m_LocalScale: {x: 1.3049467, y: 2.3136811, z: 0.80058056}
   m_Children: []
   m_Father: {fileID: 1805511254}
@@ -15866,7 +15866,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1805511248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -324.7, y: -22.2, z: 0}
+  m_LocalPosition: {x: -328.9, y: -22.7, z: 0}
   m_LocalScale: {x: 4.718338, y: 4.718338, z: 4.718338}
   m_Children:
   - {fileID: 833988224}
@@ -15884,6 +15884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9fda14aaa1581419893bbfe940ad63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackTrigger: {fileID: 0}
 --- !u!1 &1841731215
 GameObject:
   m_ObjectHideFlags: 0
