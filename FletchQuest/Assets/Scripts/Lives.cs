@@ -16,7 +16,7 @@ public class Lives : MonoBehaviour {
 
         fletchLives = PlayerPrefs.GetInt("lives", 4);
 
-        livesText.text = fletchLives.ToString();
+        //livesText.text = fletchLives.ToString();
 
     }
 	

@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cedbbe36dd044c54d97574577069a76f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 
+  sceneToLoad: Victory Screen
 --- !u!61 &99118940
 BoxCollider2D:
   m_ObjectHideFlags: 0

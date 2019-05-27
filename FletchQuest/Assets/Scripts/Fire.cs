@@ -12,6 +12,8 @@ public class Fire : MonoBehaviour {
         //only do something if the player runs into
         if (fletcherScript != null)
         {
+            PlayerPrefs.DeleteKey("xPos");
+            PlayerPrefs.DeleteKey("yPos");
             //we did hit player
             fletcherScript.Kill();
         }

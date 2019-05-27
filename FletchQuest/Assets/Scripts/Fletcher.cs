@@ -132,9 +132,22 @@ public class Fletcher : MonoBehaviour {
         livesObject.LoseLife();
         livesObject.SaveLives();
 
-        Scene currentLevel = SceneManager.GetActiveScene();
+        bool gameOver = livesObject.IsGameOver();
 
-        SceneManager.LoadScene(currentLevel.buildIndex);
+        if (gameOver == true)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+
+        else
+        {
+
+            Scene currentLevel = SceneManager.GetActiveScene();
+
+            SceneManager.LoadScene(currentLevel.buildIndex);
+
+        }
+
     }
 
 }

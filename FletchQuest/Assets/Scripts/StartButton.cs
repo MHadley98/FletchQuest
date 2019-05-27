@@ -9,6 +9,7 @@ public class StartButton : MonoBehaviour {
 
 	public void StartGame()
     {
+        PlayerPrefs.DeleteKey("lives");
         PlayerPrefs.DeleteKey("score");
         PlayerPrefs.DeleteKey("xPos");
         PlayerPrefs.DeleteKey("yPos");
