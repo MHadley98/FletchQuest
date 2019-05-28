@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 736777843}
   - component: {fileID: 736777842}
   m_Layer: 0
-  m_Name: Fletcher_0
+  m_Name: Fletcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -542,7 +542,7 @@ MonoBehaviour:
   ttButton: Time Travel
   sceneToLoad: Level 1-Past
   scoreObject: {fileID: 1352487099}
-  livesObject: {fileID: 0}
+  livesObject: {fileID: 1260156524}
   fletcherAnimator: {fileID: 736777839}
   playerSprite: {fileID: 736777840}
   playerCollider: {fileID: 736777842}
@@ -657,7 +657,7 @@ GameObject:
   - component: {fileID: 1184466810}
   - component: {fileID: 1184466809}
   m_Layer: 8
-  m_Name: Level 1 Present-1.png
+  m_Name: Level 1 Present
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -732,6 +732,7 @@ GameObject:
   - component: {fileID: 1260156521}
   - component: {fileID: 1260156523}
   - component: {fileID: 1260156522}
+  - component: {fileID: 1260156524}
   m_Layer: 0
   m_Name: Health Bar_0
   m_TagString: Untagged
@@ -816,6 +817,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1260156524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1260156520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16974677351accc42884cc2238c0a6ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  livesText: {fileID: 0}
 --- !u!1 &1352487097
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,7 +2916,7 @@ GameObject:
   - component: {fileID: 1976364898}
   - component: {fileID: 1976364897}
   m_Layer: 0
-  m_Name: End Level Flag_0
+  m_Name: End Level Flag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2921,6 +2934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Level 2-Present
+  scoreObject: {fileID: 1352487099}
 --- !u!61 &1976364898
 BoxCollider2D:
   m_ObjectHideFlags: 0

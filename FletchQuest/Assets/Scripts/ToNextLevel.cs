@@ -9,6 +9,7 @@ public class ToNextLevel : MonoBehaviour
 {
     //designer variable 
     public string sceneToLoad;
+    public Score scoreObject;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -20,6 +21,8 @@ public class ToNextLevel : MonoBehaviour
         {
             PlayerPrefs.DeleteKey("xPos");
             PlayerPrefs.DeleteKey("yPos");
+
+            scoreObject.SaveScore();
             //load the next level
             SceneManager.LoadScene(sceneToLoad);
         }

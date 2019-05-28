@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fire : MonoBehaviour {
+public class KillPlayer : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 167372452}
   - component: {fileID: 167372454}
   m_Layer: 0
-  m_Name: L2 Box Dest.
+  m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15464,6 +15464,7 @@ GameObject:
   - component: {fileID: 1637979727}
   - component: {fileID: 1637979729}
   - component: {fileID: 1637979728}
+  - component: {fileID: 1637979730}
   m_Layer: 0
   m_Name: Health Bar_0
   m_TagString: Untagged
@@ -15548,6 +15549,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1637979730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1637979726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16974677351accc42884cc2238c0a6ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  livesText: {fileID: 0}
 --- !u!1 &1805511248
 GameObject:
   m_ObjectHideFlags: 0
@@ -15561,9 +15574,8 @@ GameObject:
   - component: {fileID: 1805511251}
   - component: {fileID: 1805511250}
   - component: {fileID: 1805511249}
-  - component: {fileID: 1805511255}
   m_Layer: 0
-  m_Name: Fletcher_0
+  m_Name: Fletcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15624,7 +15636,7 @@ MonoBehaviour:
   ttButton: Time Travel
   sceneToLoad: Level 2-Past
   scoreObject: {fileID: 253276091}
-  livesObject: {fileID: 0}
+  livesObject: {fileID: 1637979730}
   fletcherAnimator: {fileID: 1805511252}
   playerSprite: {fileID: 1805511253}
   playerCollider: {fileID: 1805511249}
@@ -15705,18 +15717,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1805511255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1805511248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa9fda14aaa1581419893bbfe940ad63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackTrigger: {fileID: 0}
 --- !u!1 &1841731215
 GameObject:
   m_ObjectHideFlags: 0
@@ -15730,7 +15730,7 @@ GameObject:
   - component: {fileID: 1841731217}
   - component: {fileID: 1841731216}
   m_Layer: 0
-  m_Name: End Level Flag_0
+  m_Name: End Level Flag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15748,6 +15748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Level 3-Present
+  scoreObject: {fileID: 253276091}
 --- !u!61 &1841731217
 BoxCollider2D:
   m_ObjectHideFlags: 0

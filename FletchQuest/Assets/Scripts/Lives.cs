@@ -29,7 +29,7 @@ public class Lives : MonoBehaviour {
     {
 
         fletchLives = fletchLives - 1;
-        livesText.text = fletchLives.ToString();
+        //livesText.text = fletchLives.ToString();
 
     }
 
