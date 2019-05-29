@@ -18,6 +18,7 @@ public class Fletcher : MonoBehaviour {
     public string sceneToLoad;
     public Score scoreObject;
     public Lives livesObject;
+    public AudioSource tt;
 
     public Animator fletcherAnimator;
     public SpriteRenderer playerSprite;
@@ -111,6 +112,8 @@ public class Fletcher : MonoBehaviour {
         bool ttButtonPressed = Input.GetButtonDown(ttButton);
         if (ttButtonPressed == true && touchingGround == true)
         {
+            tt.Play();
+
             scoreObject.SaveScore();
 
             PlayerPrefs.SetFloat("xPos", transform.position.x);
