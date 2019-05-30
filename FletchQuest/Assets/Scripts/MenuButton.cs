@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour {
 
-	// Use this for initialization
 	public void GoToMenu() {
 
         SceneManager.LoadScene("Main Menu");

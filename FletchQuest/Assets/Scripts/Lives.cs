@@ -10,9 +10,11 @@ public class Lives : MonoBehaviour {
 
     private int fletchLives = 4;
 
+    public Animator livesAnimator;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 
         fletchLives = PlayerPrefs.GetInt("lives", 4);
 
@@ -22,8 +24,10 @@ public class Lives : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+
+        livesAnimator.SetInteger("Lives", (fletchLives));
+
+    }
 
     public void LoseLife()
     {
