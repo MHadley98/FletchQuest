@@ -29,6 +29,7 @@ public class Fletcher : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        //Get player's position for tt
         Vector3 newPos = transform.position;
         newPos.x = PlayerPrefs.GetFloat("xPos", transform.position.x);
         newPos.y = PlayerPrefs.GetFloat("yPos", transform.position.y);
@@ -112,13 +113,17 @@ public class Fletcher : MonoBehaviour {
         bool ttButtonPressed = Input.GetButtonDown(ttButton);
         if (ttButtonPressed == true && touchingGround == true)
         {
+            //plays tt sound
             tt.Play();
 
+            //saves player's score
             scoreObject.SaveScore();
 
+            //Saves Fletcher's current poistion
             PlayerPrefs.SetFloat("xPos", transform.position.x);
             PlayerPrefs.SetFloat("yPos", transform.position.y);
 
+            //Loads opposite scene
             SceneManager.LoadScene(sceneToLoad);
 
 
@@ -135,16 +140,18 @@ public class Fletcher : MonoBehaviour {
         livesObject.LoseLife();
         livesObject.SaveLives();
 
+        //check to see if any lives left
         bool gameOver = livesObject.IsGameOver();
 
         if (gameOver == true)
         {
+            //loads Game Over is no lives left
             SceneManager.LoadScene("GameOver");
         }
 
         else
         {
-
+            //gets and reloads current level
             Scene currentLevel = SceneManager.GetActiveScene();
 
             SceneManager.LoadScene(currentLevel.buildIndex);

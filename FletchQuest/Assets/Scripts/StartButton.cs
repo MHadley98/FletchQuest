@@ -9,12 +9,13 @@ public class StartButton : MonoBehaviour {
 
 	public void StartGame()
     {
+        //deletes previous lives, score and tt position from PlayerPrefs
         PlayerPrefs.DeleteKey("lives");
         PlayerPrefs.DeleteKey("score");
         PlayerPrefs.DeleteKey("xPos");
         PlayerPrefs.DeleteKey("yPos");
 
-        //Loads Level 1
+        //Loads Level 1-Present
         SceneManager.LoadScene("Level 1-Present");
     }
 

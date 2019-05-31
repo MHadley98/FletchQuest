@@ -45,8 +45,7 @@ public class Score : MonoBehaviour {
 
     }
 
-    //function to save the score to the player preferences
-    //public so it can be triggered from other script(door)
+    //Saves player score when they hit End Flag
     public void SaveScore()
     {
         PlayerPrefs.SetInt("score", numericalScore);

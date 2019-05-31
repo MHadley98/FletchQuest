@@ -7,18 +7,18 @@ using UnityEngine.SceneManagement;
 
 public class ToNextLevel : MonoBehaviour
 {
-    //designer variable 
     public string sceneToLoad;
     public Score scoreObject;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //check if the thing we collideded with has player script
+        //check if the thing we collideded with has Fletcher script
         Fletcher playerScript = collision.collider.GetComponent<Fletcher>();
 
-        //only do something if the player runs into
+        //run if ran into by player
         if (playerScript != null)
         {
+            //deletes player position for tt
             PlayerPrefs.DeleteKey("xPos");
             PlayerPrefs.DeleteKey("yPos");
 

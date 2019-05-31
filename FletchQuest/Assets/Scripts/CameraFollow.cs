@@ -30,6 +30,7 @@ public class CameraFollow : MonoBehaviour
         //sets target psoition
         Vector3 targetPos = target.position;
 
+        //Screen clamping for the y-axis
         if (YMinEnabled && YMaxEnabled)
             targetPos.y = Mathf.Clamp(target.position.y, YMinValue, YMaxValue);
         else if (YMinEnabled)
@@ -37,7 +38,7 @@ public class CameraFollow : MonoBehaviour
         else if (YMaxEnabled)
             targetPos.y = Mathf.Clamp(target.position.y, target.position.y, YMaxValue);
 
-
+        //Screen clamping for the x-axis
         if (XMinEnabled && XMaxEnabled)
             targetPos.x = Mathf.Clamp(target.position.x, XMinValue, XMaxValue);
         else if (XMinEnabled)
